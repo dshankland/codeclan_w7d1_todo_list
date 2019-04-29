@@ -12,10 +12,10 @@
 <body>
 	<div id="app">
 		<h1>ToDo's</h1>
-		<input type="text" v-model="newItem" />
-		<input id="high" type="radio" name="priority" value="High">
+		<input type="text" v-model="newItem.todo" />
+		<input id="high" type="radio" name="priority" value="High" v-model="newItem.priority">
 		<label for="high">High</label>
-		<input id="low" type="radio" name="priority" value="Low">
+		<input id="low" type="radio" name="priority" value="Low" v-model="newItem.priority">
 		<label for="low">Low</label>
 		<button v-on:click="saveNewItem()">Save Item</button>
 		<ul>
