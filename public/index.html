@@ -19,7 +19,10 @@
 		<label for="low">Low</label>
 		<button v-on:click="saveNewItem()">Save Item</button>
 		<ul>
-			<li v-for="item in todos">{{ item.todo }}</li>
+			<li v-for="item in todos" v-bind:class="item.priority==='High' ? 'highPriority' : 'lowPriority'">
+				<span>{{ item.todo }}</span>
+				<span>{{ item.priority }}</span>
+			</li>
 		</ul>
 	</div>
 </body>

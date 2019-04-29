@@ -29,12 +29,12 @@ li button {
 	cursor: pointer;
 }
 
-li.purchased {
+li.lowPriority {
 	border: 2px solid #1a681e;
 	color: #1a681e;
 }
 
-li.notPurchased {
+li.highPriority {
 	border: 2px solid #f2360c;
 }
 
